@@ -1,14 +1,5 @@
 ﻿using HtmlAgilityPack;
-using Microsoft.Extensions.Configuration;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
-using System;
-using System.Net;
-using System.Reflection.Emit;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
 using Teste.Models;
 
 namespace Teste

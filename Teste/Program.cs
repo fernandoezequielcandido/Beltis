@@ -1,4 +1,3 @@
-using Microsoft.Extensions.Configuration;
 using Teste;
 
 var builder = WebApplication.CreateBuilder(args);
