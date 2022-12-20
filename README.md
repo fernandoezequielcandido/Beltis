@@ -4,7 +4,7 @@
 
 ## Introdução
 
-Nesse desafio foi o desenvolvimento de uma REST API que utilizou os dados do projeto Open Food Facts, um banco de dados aberto com informação nutricional de diversos produtos alimentícios.
+Nesse desafio foi desenvolvida uma REST API que utilizou os dados do projeto Open Food Facts, um banco de dados aberto com informação nutricional de diversos produtos alimentícios.
 
 O projeto tem como objetivo dar suporte a equipe de nutricionistas da empresa Fitness Foods LC para que possam comparar de maneira rápida a informação nutricional dos alimentos da base do Open Food Facts.
 
