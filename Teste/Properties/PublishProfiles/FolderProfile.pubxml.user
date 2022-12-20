@@ -3,4 +3,9 @@
 https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Testes\Beltis\Publish</_PublishTargetUrl>
+    <History>True|2022-12-20T15:30:51.5950929Z;True|2022-12-20T12:30:36.1240942-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
 </Project>
