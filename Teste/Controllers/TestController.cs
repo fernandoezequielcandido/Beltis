@@ -38,9 +38,10 @@ namespace Teste.Controllers
             { 
                 products.Add(item);
             }
-
+            DateTime now = DateTime.Now;
             TimeSpan timeSpan = DateTime.Now - Connect.Last;
-            if (timeSpan.Hours > 24)
+            string[] horaMinuto = _configuration.GetValue<string>("HorarioImportacao").Split(':');
+            if (timeSpan.Hours > 24 || (now.Hour == int.Parse(horaMinuto[0]) && now.Minute == int.Parse(horaMinuto[1])))
             {
                 Connect.Start(_configuration, true);
             }
@@ -59,6 +60,14 @@ namespace Teste.Controllers
             var coll = db2.GetCollection<ProductToList>("products").Aggregate().ToList();
 
             var returnValue = coll.FirstOrDefault(x => x.cod == code);
+
+            DateTime now = DateTime.Now;
+            TimeSpan timeSpan = now - Connect.Last;
+            string[] horaMinuto = _configuration.GetValue<string>("HorarioImportacao").Split(':');
+            if (timeSpan.Hours > 24 || (now.Hour == int.Parse(horaMinuto[0]) && now.Minute == int.Parse(horaMinuto[1])))
+            {
+                Connect.Start(_configuration, true);
+            }
 
             if (returnValue != null)
             {
