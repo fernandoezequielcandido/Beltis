@@ -26,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-await Connect.StartAsync(Configuration, true);
+await Connect.StartAsync(Configuration);
 
 app.Run();
