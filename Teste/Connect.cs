@@ -13,8 +13,20 @@ namespace Teste
             MongoClient dbClient = new MongoClient(config.GetValue<string>("ConnectionMongo"));
             var db2 = dbClient.GetDatabase("teste_api");
             var listCount = db2.GetCollection<ProductToList>("products").Aggregate().ToList();
+            bool forceLocal = false;
 
-            if (listCount.Count == 0 || force)
+            if (listCount.Count > 0)
+            {
+                var lastDate = listCount[0].imported_t;
+                DateTime now = DateTime.Now;
+                TimeSpan timeSpan = now - lastDate;
+                if (timeSpan.Hours > 24)
+                { 
+                    forceLocal = true;
+                }
+            }
+
+            if (listCount.Count == 0 || force || forceLocal)
             {
                 string url = "https://world.openfoodfacts.org/";
                 var response = await CallUrl(url);
