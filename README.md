@@ -14,7 +14,7 @@ O projeto tem como objetivo dar suporte a equipe de nutricionistas da empresa Fi
 
 ### Investigação
 
-- Durante a investigacao para o projeto foi descoberto o pacote HtmlAgilityPack que agilizou muito o densenvolvimento, com ele é possível filtrar o conteúdo do html assim localizando os itens necessários para carregamento das informações dos produtos.
+- Durante a investigacao para o projeto foi descoberto o pacote HtmlAgilityPack que agilizou muito o densenvolvimento, com ele é possível filtrar o conteúdo do html assim localizando os itens necessários para carregamento das informações dos produtos, outro encontrado foi o FluentScheduler que ajudou no agendamento.
 - A importação dos dados está na classe Connect, de forma dividida, primeiro a obtenção da página principal, com isso vem a lista de produtos e as páginas subsequentes, com suas informações. 
 ## O projeto e sua execução
 
