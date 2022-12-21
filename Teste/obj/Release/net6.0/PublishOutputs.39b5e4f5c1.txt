@@ -6,6 +6,7 @@ D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\Teste.deps.json
 D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\Teste.runtimeconfig.json
 D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\Teste.pdb
 D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\DnsClient.dll
+D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\FluentScheduler.dll
 D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\HtmlAgilityPack.dll
 D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\System.Net.Http.Formatting.dll
 D:\Testes\Beltis\Teste\obj\Release\net6.0\PubTmp\Out\System.Web.Http.dll

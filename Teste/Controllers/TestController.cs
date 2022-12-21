@@ -38,10 +38,11 @@ namespace Teste.Controllers
             { 
                 products.Add(item);
             }
+
             DateTime now = DateTime.Now;
             TimeSpan timeSpan = DateTime.Now - Connect.Last;
-            string[] horaMinuto = _configuration.GetValue<string>("HorarioImportacao").Split(':');
-            if (timeSpan.Hours > 24 || (now.Hour == int.Parse(horaMinuto[0]) && now.Minute == int.Parse(horaMinuto[1])))
+           
+            if (timeSpan.Hours > 24)
             {
                 Connect.Start(_configuration, true);
             }
@@ -63,8 +64,8 @@ namespace Teste.Controllers
 
             DateTime now = DateTime.Now;
             TimeSpan timeSpan = now - Connect.Last;
-            string[] horaMinuto = _configuration.GetValue<string>("HorarioImportacao").Split(':');
-            if (timeSpan.Hours > 24 || (now.Hour == int.Parse(horaMinuto[0]) && now.Minute == int.Parse(horaMinuto[1])))
+            
+            if (timeSpan.Hours > 24)
             {
                 Connect.Start(_configuration, true);
             }

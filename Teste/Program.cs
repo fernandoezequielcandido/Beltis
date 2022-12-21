@@ -1,3 +1,4 @@
+using FluentScheduler;
 using Teste;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,4 +28,5 @@ app.MapControllers();
 
 await Connect.StartAsync(Configuration);
 
+JobManager.Initialize(new ScheduledTasks(Configuration));
 app.Run();

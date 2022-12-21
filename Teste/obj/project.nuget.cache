@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pNBHwV2FvrcyvZGxWJpxfUlOJyDepDZctkcihv8vil9zFc50e3E3ROEO8PxOAbBi2zrxjymEL7stvmkmU31IUQ==",
+  "dgSpecHash": "Fe18xnelXR6y4SXuWqIkxfr6CWqiOwmPs0WRx+4CwNF6Km/BUDZeRJ4Zp2wIQNSb26CSYNVKvl4OQe4/byH7xw==",
   "success": true,
   "projectFilePath": "D:\\Testes\\Beltis\\Teste\\Teste.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferna\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\fluentscheduler\\5.5.1\\fluentscheduler.5.5.1.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\ferna\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",

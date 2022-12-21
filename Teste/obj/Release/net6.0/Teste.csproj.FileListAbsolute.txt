@@ -41,3 +41,4 @@ D:\Testes\Beltis\Teste\obj\Release\net6.0\refint\Teste.dll
 D:\Testes\Beltis\Teste\obj\Release\net6.0\Teste.pdb
 D:\Testes\Beltis\Teste\obj\Release\net6.0\Teste.genruntimeconfig.cache
 D:\Testes\Beltis\Teste\obj\Release\net6.0\ref\Teste.dll
+D:\Testes\Beltis\Teste\bin\Release\net6.0\FluentScheduler.dll

@@ -50,7 +50,7 @@ namespace Teste
             var listCount = db2.GetCollection<ProductToList>("products").Aggregate().ToList();
 
             bool forceLocal = false;
-
+            Console.WriteLine("Inicio");
             if (listCount.Count > 0)
             {
                 var lastDate = listCount[0].imported_t;
@@ -61,7 +61,7 @@ namespace Teste
                     forceLocal = true;
                 }
             }
-
+            Console.WriteLine("Rodando");
             if (listCount.Count == 0 || force || forceLocal)
             {
                 string url = "https://world.openfoodfacts.org/";
@@ -76,6 +76,7 @@ namespace Teste
                 coll.InsertMany(products);
                 Last = DateTime.Now;
             }
+            Console.WriteLine("Terminou");
         }
 
         private static async Task<string> CallUrl(string fullUrl)
